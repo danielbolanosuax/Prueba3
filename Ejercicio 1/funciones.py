@@ -135,4 +135,4 @@ def mover3_2():
     l2.append(l3.pop())
     actualizar_matriz()
   else:
-    print("Movimiento inválido")
+    print("Movimiento inválido")

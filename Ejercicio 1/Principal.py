@@ -44,4 +44,4 @@ while True:
 
   # Update best time if applicable
   if mejor_tiempo is None or time2 - time1 < mejor_tiempo:
-    mejor_tiempo = time2 - time1
+    mejor_tiempo = time2 - time1

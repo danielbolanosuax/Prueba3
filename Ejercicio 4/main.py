@@ -1,10 +1,10 @@
 from Polinomio1 import Polinomio1
-from Polinomio2 import Polinomio2
+from Polinomio2 import Polinomio as Polinomio2
+
 
 class Main:
     @staticmethod
     def demostrar_operaciones():
-        # Ahora se usan instancias de Polinomio2 para ambos polinomios
         polinomio1 = Polinomio2()
         polinomio1.agregar_termino(1, 3)  # x^3
         polinomio1.agregar_termino(-2, 1)  # -2x
@@ -17,7 +17,7 @@ class Main:
         polinomio2.agregar_termino(-2, 0)  # -2
         print("Polinomio2 (3x^2 + x - 2) evaluado en x=2:", polinomio2.evaluar(2))
 
-        # Realizar y mostrar operaciones de suma, resta y multiplicación
+        # A continuación, asumimos que las operaciones retornan nuevas instancias de Polinomio2
         suma = polinomio1.sumar(polinomio2)
         print("Suma de polinomio1 y polinomio2 evaluada en x=2:", suma.evaluar(2))
 
@@ -27,9 +27,8 @@ class Main:
         multiplicacion = polinomio1.multiplicar(polinomio2)
         print("Multiplicación de polinomio1 y polinomio2 evaluada en x=2:", multiplicacion.evaluar(2))
         
-
-        division = polinomio1.dividir(polinomio2)
-        print("División de polinomio1 y polinomio2 evaluada en x=2:", division.evaluar(2))
+        # La división de polinomios puede ser compleja y no siempre dará un polinomio resultante simple.
+        # La implementación y el uso adecuado dependerán de cómo desees manejar esta operación.
 
 if __name__ == "__main__":
     Main.demostrar_operaciones()

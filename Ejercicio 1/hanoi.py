@@ -119,7 +119,7 @@ def main():
             break
     move_tower(height, "A", "B", "C")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
 
 doctest.testmod(verbose=True)
